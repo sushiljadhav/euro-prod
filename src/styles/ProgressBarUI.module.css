@@ -1,0 +1,31 @@
+.slider-thumb::after {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  background-color: #274f8c;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.step[data-in-range="true"]::after {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  background-color: #274f8c;
+  transition-property: all;
+  position: absolute;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
